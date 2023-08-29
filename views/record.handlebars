@@ -1,0 +1,43 @@
+<table class="table m-5">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">Roll number</th>
+      <th scope="col">Name</th>
+      <th scope="col">D.O.B.</th>
+      <th scope="col">Scores</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    {{#each records}}
+      {{#dataValues}}
+        <tr class="">
+
+          <th scope="row">{{rollnumber}}</th>
+          <td> {{name}}</td>
+          <td> {{dob}}</td>
+          <td> {{score}}</td>
+          <td>
+            <div class="">
+              <a
+                class="btn btn-primary px-4"
+                href="/editpage/{{id}}"
+                role="button"
+              ><img
+                  src="https://www.svgrepo.com/show/522527/edit-3.svg "
+                  height="20px"
+                /></a>
+              <a
+                class="btn btn-danger px-4"
+                href="/delete/{{id}}"
+                role="button"
+              ><img
+                  src="https://www.svgrepo.com/show/529257/trash-bin-trash.svg"
+                  height="20px"
+                /></a>
+            </div></td>
+        </tr>
+      {{/dataValues}}
+    {{/each}}
+  </tbody>
+</table>

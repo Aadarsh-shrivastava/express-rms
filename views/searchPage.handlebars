@@ -1,0 +1,38 @@
+<form action="/search" method="POST">
+
+  <div class="card m-3 p-3">
+    <h4>Search the result of any student</h4>
+    <div class="d-flex justify-content-around">
+
+      <div class="mb-3">
+        <label for="rollnumber" class="form-label">Roll number</label>
+        <input
+          name="rollnumber"
+          type="text"
+          class="form-control px-5"
+          id="rollnumber"
+          placeholder="001"
+        />
+      </div>
+
+      <div class="mb-3">
+        <label for="studentName" class="form-label">Date of Birth</label>
+        <input
+          name="dob"
+          type="date"
+          class="form-control px-5"
+          id="studentName"
+          placeholder="aadarsh"
+        />
+      </div>
+    </div>
+
+    <div class="text-center d-flex justify-content-around">
+
+      <input type="submit" value="Search" />
+      {{! <a class="btn btn-danger px-5 m-4" href="/login" role="button">cancel</a> }}
+
+    </div>
+
+  </div>
+</form>

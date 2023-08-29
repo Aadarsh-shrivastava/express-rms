@@ -1,0 +1,67 @@
+<form action="/edit/{{id}}" method="POST">
+
+  <div class="card m-3 p-3">
+
+    <div class="d-flex justify-content-around">
+
+      <div class="mb-3">
+        <label for="rollnumber" class="form-label">Roll number</label>
+        <input
+          name="rollnumber"
+          type="text"
+          class="form-control px-5"
+          id="rollnumber"
+          value="{{result.rollnumber}}"
+          placeholder="001"
+        />
+      </div>
+
+      <div class="mb-3">
+        <label for="studentName" class="form-label">Student Name</label>
+        <input
+          name="name"
+          type="text"
+          class="form-control px-5"
+          id="studentName"
+          value={{result.name}}
+        
+        />
+      </div>
+    </div>
+
+    <div class="d-flex justify-content-around">
+
+      <div class="mb-3">
+        <label for="dateofbirth" class="form-label">Date of Birth</label>
+        <input
+          name="dob"
+          type="text"
+          class="form-control px-5"
+          id="dateofbirth"
+         
+          value={{result.dob}}
+        />
+      </div>
+
+      <div class="mb-3">
+        <label for="scores" class="form-label">Scores</label>
+        <input
+          name="score"
+          type="text"
+          class="form-control px-5"
+          id="scores"
+   
+          value={{result.score}}
+        />
+      </div>
+    </div>
+
+    <div class="text-center d-flex justify-content-around">
+
+      <input type="submit" value="submit" />
+      {{! <a class="btn btn-danger px-5 m-4" href="/login" role="button">cancel</a> }}
+
+    </div>
+
+  </div>
+</form>
